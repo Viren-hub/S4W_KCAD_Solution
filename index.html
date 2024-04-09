@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>KCAD Solutions</title>
+    <script>
+        "use strict";
+
+        !function () {
+            var t = window.driftt = window.drift = window.driftt || [];
+            if (!t.init) {
+                if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+                t.invoked = !0, t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"],
+                    t.factory = function (e) {
+                        return function () {
+                            var n = Array.prototype.slice.call(arguments);
+                            return n.unshift(e), t.push(n), t;
+                        };
+                    }, t.methods.forEach(function (e) {
+                        t[e] = t.factory(e);
+                    }), t.load = function (t) {
+                        var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+                        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+                        var i = document.getElementsByTagName("script")[0];
+                        i.parentNode.insertBefore(o, i);
+                    };
+            }
+        }();
+        drift.SNIPPET_VERSION = '0.3.1';
+        drift.load('w2rbuyy9kbdw');
+    </script>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/kcad_logo_new.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <img class="img-fluid" style="height: 80%; " src="img/kcad_logo_new.png" alt="">
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="nav-loc">
+                <span class="location-icon"><i class="fa fa-map-marker-alt me-3 location-symbol"></i><a
+                        href="#map">Chinchwad, Pune</a></span><span class="call-icon"><i
+                        class="fa fa-phone-alt me-3 call-symbol"></i><a id="call-icon" href="tel:83909038666">+91
+                        8390903866</a></span>
+            </div>
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <div class="nav-item">
+                    <a href="#Home" class="nav-link active">Home</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#about-us" class="nav-link">About</a>
+                </div>
+                <div class="nav-item">
+                    <div class="nav-link">
+                        Courses <span class="dropdown-icon"></span>
+                        <div class="dropdown">
+                            <a href="#courses-us">BIW Welding Fixture</a>
+                            <a href="#courses-us">Automative Plastic/Seating Domain</a>
+                            <a href="#courses-us">Wire Harness</a>
+                            <a href="#courses-us">PLC/SCADA</a>
+                            <a href="#courses-us">Finite Element Analysis</a>
+                            <a href="#courses-us">Press Tool Design</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="#Placement" class="nav-link">Placement</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#footer-us" class="nav-link">Contact</a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5" id="Home">
+        <div class="owl-carousel header-carousel position-relative">
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid update-height" src="img/Home1.jpeg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(24, 29, 50, .7);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h3 class="text-white12 animated slideInDown">
+                                    CREATIVITY OF DESIGN, BUILD TO PERFECTION
+                                </h3>
+                                <p class="fs-5 text-white mb-4 pb-2">KCAD SOLUTIONS is a leading provider of
+                                    Domain-Based Training in the field of CAD, CAE, and Mechanical Engineering design
+                                    for professionals in Mechanical, Production, and Automobile engineering.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid update-height" src="img/Home2.jpeg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(24, 29, 56, .7);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h3 class="text-white12 animated slideInDown">
+                                    CREATIVITY OF DESIGN, BUILD TO PERFECTION
+                                </h3>
+                                <p class="fs-5 text-white mb-4 pb-2">KCAD SOLUTIONS is a leading provider of
+                                    Domain-Based Training in the field of CAD, CAE, and Mechanical Engineering design
+                                    for professionals in Mechanical, Production, and Automobile engineering.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid update-height" src="img/Home3.jpeg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(24, 29, 56, .7);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h3 class="text-white12 animated slideInDown">
+                                    CREATIVITY OF DESIGN, BUILD TO PERFECTION
+                                </h3>
+                                <p class="fs-5 text-white mb-4 pb-2">KCAD SOLUTIONS is a leading provider of
+                                    Domain-Based Training in the field of CAD, CAE, and Mechanical Engineering design
+                                    for professionals in Mechanical, Production, and Automobile engineering.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+    <div class="container-xxl">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3 mb-5">INTRODUCTION TO CAD/CAM AND CAE
+                </h6>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="row gy-2 gx-4 mb-4">
+                        <div class="col-sm-12">
+                            <p class="mb-3 mt-3">
+                                With the advancement in technology, the automobile industry is striving for delivering
+                                products of increasing variety, user-friendliness, and higher quality in the context of
+                                increasing global competition. Industries cannot thrive in worldwide competition unless
+                                they introduce new products with better quality, at lower costs, and with shorter
+                                lead-times. With dramatic changes in computing power and the wider availability of
+                                software tools for design and production, engineers are now utilizing Computer-Aided
+                                Design (CAD) for Design, Computer-Aided Manufacturing (CAM) for Manufacturing, and
+                                Computer-Aided Engineering (CAE) for Analysis & Simulation systems to automate their
+                                design and production processes. These technologies are now employed daily for various
+                                engineering tasks with the objective to save time and increase production.
+                            </p>
+                        </div>
+                        <div class="col-sm-12">
+                            <p class="mb-3">
+                                Our unique courses are specially tailored considering current industry demands and job
+                                requirements, which not only assist engineers in securing a job in the industry but also
+                                help them boost their design career by acquiring vast practical knowledge at the start
+                                of their careers.
+                            </p>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <p class="mb-3">
+                                Our training content is aligned with current industry practices, giving students an
+                                extra advantage during interviews as well as working independently on projects.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100 rounded-circle"
+                            src="img/AdobeStock_400719603_Preview.jpeg" alt="" style="object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Start -->
+    <div class="container-xxl py-5" id="about-us">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3 mb-5">About Us</h6>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-98 h-98 rounded-circle" src="img/Adobe.jpeg" alt=""
+                            style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="row gy-2 gx-4 mb-4">
+                        <div class="col-sm-12">
+                            <p class="mb-3 mt-3"><i class="fa fa-arrow-right text-primary me-2"></i><b>KCAD
+                                    SOLUTIONS</b>
+                                is a leading provider of Domain-Based Training in the field of CAD, CAE, and Mechanical
+                                Engineering design for professionals in Mechanical, Production, and Automobile
+                                engineering.
+
+
+                            </p>
+                        </div>
+                        <div class="col-sm-12">
+                            <p class="mb-3"><i class="fa fa-arrow-right text-primary me-2"></i><b>KCAD SOLUTIONS</b>
+                                our institution offers job-oriented courses with a strong focus on providing 100%
+                                placement assistance to students in the mechanical engineering design domain. With an
+                                impeccable track record, KCAD SOLUTIONS has achieved a 100% placement rate in leading
+                                companies across India. We are dedicated to bridging the gap between mechanical
+                                engineers and skilled design engineers by equipping our students with a comprehensive
+                                blend of CAD software proficiency, domain knowledge, and industrial engineering
+                                expertise.
+                            </p>
+                        </div>
+                        <div class="col-sm-12">
+                            <p class="mb-3"><i class="fa fa-arrow-right text-primary me-2"></i><b>Our key features</b>
+                                our key features include practical training tailored to industry requirements, fostering
+                                a passion for design, and developing essential design skills in our students to prepare
+                                them for the industry. Additionally, we are proud to be registered under the MSME
+                                ministry of the Government of India, demonstrating our commitment to quality and
+                                compliance with national standards.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5" id="service-us">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <h5 class="mb-3"><i class="fas fa-bullseye"></i> Our Mission</h5>
+                            <p>Our mission at KCAD SOLUTIONS is to empower aspiring engineers with the skills and
+                                knowledge needed to excel in the dynamic field of mechanical engineering design. Through
+                                our comprehensive courses and hands-on training, we aim to cultivate a passion for
+                                innovation and equip our students with the practical skills necessary to tackle
+                                real-world design challenges. With a focus on industry relevance and job readiness, we
+                                strive to bridge the gap between academic learning and professional success, ensuring
+                                that our graduates emerge as confident and competent design engineers ready to make a
+                                meaningful impact in the industry.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <h5 class="mb-3"><i class="fas fa-eye"></i> Our Vision</h5>
+                            <p>
+                                Our vision at KCAD SOLUTIONS is to be recognized as a global leader in providing
+                                domain-based training in CAD, CAE, and Mechanical Engineering design. We aspire to set
+                                the standard for excellence in engineering education by continuously evolving our
+                                curriculum, embracing emerging technologies, and fostering a culture of innovation and
+                                collaboration. Through our commitment to academic rigor, industry relevance, and student
+                                success, we envision empowering a new generation of engineers who will drive
+                                technological advancements and shape the future of mechanical design. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service End -->
+
+    <!-- Courses Start -->
+    <div class="container-xxl py-5" id="courses-us">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Courses</h6>
+                <h5 class="mb-5">We Are Expertise In Tranning Like</h5>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/blw.jpg" alt="">
+                        </div>
+                        <div class="text-center p-4 pb-2">
+                            <h5 class="mb-4">BIW Welding Fixture</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/AutomativePlatic.jpeg" alt="">
+                        </div>
+                        <div class="text-center p-4 pb-2">
+                            <h5 class="mb-4">Automative Plastic/Seating Domain</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/AdobeStock_471307207_Preview.jpeg" alt="">
+                        </div>
+                        <div class="text-center p-4 pb-2">
+                            <h5 class="mb-4">Wire Harness</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 justify-content-center mt-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/PLA.jpeg" alt="">
+                        </div>
+                        <div class="text-center p-4 pb-2">
+                            <h5 class="mb-4">PLC/SCADA</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" style="height: 270px;" src="img/AdobeStock_692635130_Preview (1).jpeg"
+                                alt="">
+                        </div>
+                        <div class="text-center p-4 pb-2">
+                            <h5 class="mb-4">Finite Element Analysis</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/PressTool.jpeg" alt="">
+                        </div>
+                        <div class="text-center p-4 pb-2">
+                            <h5 class="mb-4">Press Tool Design</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Courses End -->
+
+    <!-- Team Start -->
+    <!-- <div class="container-xxl py-5"> -->
+    <div class="container" id="team-us">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="section-title bg-white text-center text-primary px-3 mb-5">Our Team</h6>
+        </div>
+        <div class="row">
+            <!-- <div class="col-lg-4 col-md-6 wow ms-5" data-wow-delay="0.5s"></div> -->
+            <div class="col-lg-3 col-md-6 wow out-team-head" data-wow-delay="0.5s">
+                <div class="team-item bg-light">
+                    <div class="overflow-hidden">
+                        <img class="img-fluid1" src="img/team-member-icon.png" alt="">
+                    </div>
+                    <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                        <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                            <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center p-4">
+                        <h5 class="mb-0">Atul Bendale</h5>
+                        <small>18 Year Experince in Design</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 mt-2">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid1" src="img/team-member-icon.png" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-3 px-1">
+
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Khagendra Sarode</h5>
+                            <small>Catia domain Based Tranning</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid1" src="img/team-member-icon.png" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-3 px-1">
+
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Vedhashy Phalak</h5>
+                            <small>NX domain Based Tranning</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid1" src="img/business-woman-with-tie-icon.png" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-3 px-1">
+
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Komal Bhirud</h5>
+                            <small>CATIA/NX Software Tranning</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid1" src="img/business-woman-with-tie-icon.png" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-3 px-1">
+
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Chitra Phalak</h5>
+                            <small>Human Resourse & Accounting</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5 wow fadeInUp" id="Placement" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="section-title bg-white text-center text-primary px-3">Placement</h6>
+                <h5 class="mb-5">We focused on improving Knowledge and skills by providing Quality Education</h5>
+            </div>
+            <div class="owl-carousel testimonial-carousel position-relative">
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/Abhijeet_Patil_EDAG.jpeg"
+                        style="width: 80px; height: 80px;">
+                    <h5 class="mb-3">Abhijeet Patil</h5>
+                    <p></p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                        <p class="mb-0">EDAG</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/Abhijeet_Landge_3D CAD.jpeg"
+                        style="width: 80px; height: 80px;">
+                    <h5 class="mb-3">Abhijeet Landge</h5>
+                    <div class="testimonial-text bg-light text-center p-4">
+                        <p class="mb-0">3D KCAD</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/Aniket_Kondhalkar.JPG"
+                        style="width: 80px; height: 80px;">
+                    <h5 class="mb-3">Aniket Kondhalkar</h5>
+                    <div class="testimonial-text bg-light text-center p-4">
+                        <p class="mb-0">Piaggio Vehicles pvt ltd</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/Ashish_Bhangale.jpeg"
+                        style="width: 80px; height: 80px;">
+                    <h5 class="mb-3">Ashish Bhangale</h5>
+                    <div class="testimonial-text bg-light text-center p-4">
+                        <p class="mb-0">3D KCAD</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/Balagouda_malgoudawar.jpeg"
+                        style="width: 80px; height: 80px;">
+                    <h5 class="mb-3">Balagouda Malgoudawar</h5>
+                    <div class="testimonial-text bg-light text-center p-4">
+                        <p class="mb-0">3D KCAD</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/BHUMIKA_DHOKEY_Advance.png"
+                        style="width: 80px; height: 80px;">
+                    <h5 class="mb-3">BHUMIKA DHOKEY</h5>
+                    <div class="testimonial-text bg-light text-center p-4">
+                        <p class="mb-0">Advance Metalworking Solutions</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/Bhushan_Patil.JPG"
+                        style="width: 80px; height: 80px;">
+                    <h5 class="mb-3">Bhushan Patil</h5>
+                    <div class="testimonial-text bg-light text-center p-4">
+                        <p class="mb-0">Sai Engineers</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/Dadasaheb_londhe.png"
+                        style="width: 80px; height: 80px;">
+                    <h5 class="mb-3">Dadasaheb Londhe</h5>
+                    <div class="testimonial-text bg-light text-center p-4">
+                        <p class="mb-0">WOOSHIN India PVT LTD</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/Ganesh_bhosale.JPG"
+                        style="width: 80px; height: 80px;">
+                    <h5 class="mb-3">Ganesh Bhosale</h5>
+                    <div class="testimonial-text bg-light text-center p-4">
+                        <p class="mb-0">Tech Pennar</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/Gaurav_shelke_KCAD.jpeg"
+                        style="width: 80px; height: 80px;">
+                    <h5 class="mb-3">Gaurav Shelke</h5>
+                    <div class="testimonial-text bg-light text-center p-4">
+                        <p class="mb-0">3D KCAD</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/Jayanta_Zatale_Chrophynska.JPG"
+                        style="width: 80px; height: 80px;">
+                    <h5 class="mb-3">Jayanta Zatale</h5>
+                    <div class="testimonial-text bg-light text-center p-4">
+                        <p class="mb-0">Chrophynska</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/Ketan_Bhobhade_Sparkli.JPG"
+                        style="width: 80px; height: 80px;">
+                    <h5 class="mb-3">Ketan Bhobhade</h5>
+                    <div class="testimonial-text bg-light text-center p-4">
+                        <p class="mb-0">Sparkline India Pvt Ltd.</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/Pratik_Ingale.jpg"
+                        style="width: 80px; height: 80px;">
+                    <h5 class="mb-3">Pratik Ingale</h5>
+                    <div class="testimonial-text bg-light text-center p-4">
+                        <p class="mb-0">INOVATUS AUTOMATION PRIVATE LTD</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/Pratik_Patil_Prism.JPG"
+                        style="width: 80px; height: 80px;">
+                    <h5 class="mb-3">Pratik Patil</h5>
+                    <div class="testimonial-text bg-light text-center p-4">
+                        <p class="mb-0">Prism Automation</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/Pratik_Ingale.jpg"
+                        style="width: 80px; height: 80px;">
+                    <h5 class="mb-3">Pratik Ingale</h5>
+                    <div class="testimonial-text bg-light text-center p-4">
+                        <p class="mb-0">INOVATUS AUTOMATION PRIVATE LTD</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/Pravin_Shinde_VDL.jpeg"
+                        style="width: 80px; height: 80px;">
+                    <h5 class="mb-3">Pravin_Shinde</h5>
+                    <div class="testimonial-text bg-light text-center p-4">
+                        <p class="mb-0">VDL</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/SACHIN_DEOKAR_.png"
+                        style="width: 80px; height: 80px;">
+                    <h5 class="mb-3">Sachin Deokar</h5>
+                    <div class="testimonial-text bg-light text-center p-4">
+                        <p class="mb-0">PRISM AUTOMATION</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <div class="container-xxl " id="footer-us">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s"
+                style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                <h6 class="section-title bg-white text-center text-primary px-3 mb-5">Contact Us</h6>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s"
+                    style="min-height: 400px; visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                    <div class="position-relative h-100">
+                        <!-- <img class="img-fluid position-absolute w-100 h-100" src="img/about.jpg" alt=""
+                            style="object-fit: cover;"> -->
+                        <iframe class="img-fluid position-absolute w-100 h-100" id="map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d945.016978865776!2d73.79535966663427!3d18.66094810453443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b82ace98eba3%3A0xaa2b03f9e53cf26c!2sSai%20Arcade%2C%20Sambhaji%20Nagar%20Rd%2C%20Sambhajinagar%2C%20Chinchwad%2C%20Pimpri-Chinchwad%2C%20Maharashtra%20411019!5e0!3m2!1sen!2sin!4v1697080642698!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 wow fadeInUp contact-form" data-wow-delay="0.3s">
+                    <div class="row gy-2 gx-4 mb-4">
+                        <div class="col-sm-12">
+
+                            <form>
+                                <div class="form-group rounded">
+                                    <input type="text" class="form-control rounded" name="name" id="name"
+                                        placeholder="Enter your name">
+                                </div><br>
+                                <div class="form-group">
+                                    <input type="email" class="form-control rounded" id="email"
+                                        placeholder="Enter your email">
+                                </div><br>
+                                <div class="form-group">
+                                    <input type="text" name="subject" class="form-control rounded" id="subject"
+                                        placeholder="Enter the subject">
+                                </div><br>
+                                <div class="form-group">
+                                    <textarea class="form-control rounded" name="msg" id="message" rows="5"
+                                        placeholder="Enter your message"></textarea>
+                                </div><br>
+                                <button onclick="sendMessage()" type="submit" name="submit_form" value="send"
+                                    class="btn btn-primary bt-3">Send Message</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-white mb-3">Quick Link</h4>
+                    <a class="btn btn-link" href="#about-us">About Us</a>
+                    <a class="btn btn-link" href="#courses-us">Courses</a>
+                    <a class="btn btn-link" href="#placement">Placement</a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Sai Arcade Complex, Shop No-7, MIDC G
+                        Block, Sambhajinagar, Near Thermax Chowk, Chinchwad, Pune-411019 (INDIA)
+                    </p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(+91) 8390903866</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>kcadsolutions@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-white mb-3">Gallery</h4>
+                    <div class="row g-2 pt-2">
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/blw.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/AutomativePlatic.jpeg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/AdobeStock_471307207_Preview.jpeg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/PLA.jpeg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" style="height: 90px;" src="img/AdobeStock_692635130_Preview (1).jpeg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/PressTool.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-12 text-center text-md-centre mb-2 mb-md-0">
+                        &copy; KCAD SOLUTIONS, All Right Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".navbar-nav a:not('.active')").on("click", function () {
+                $(".navbar-nav a").removeClass("active"); // Remove active class from all links
+                $(this).addClass("active"); // Add active class to the clicked link
+            });
+        });
+    </script>
+    <script>
+        // Function to add a message with a circular icon
+        function addMessageWithIcon(iconClass, message, sender) {
+            const messageContainer = document.createElement("div");
+            messageContainer.classList.add("message-container", sender);
+            messageContainer.innerHTML = `
+            <i class="fas ${iconClass} circular-icon"></i>
+            <div class="message">${message}</div>
+        `;
+            chatBody.appendChild(messageContainer);
+        }
+
+        chatSendBtn.addEventListener("click", () => {
+            const message = chatInput.value;
+            chatInput.value = "";
+
+            // Add your message with a circular icon
+            addMessageWithIcon("fa-user", `You: ${message}`, "user");
+
+            // Add a dummy response with a different icon (you can customize this)
+            addMessageWithIcon("fa-user", "Thank you for your message. We will get back to you shortly.", "support");
+        });
+
+        // Add a welcome message when the chatbox opens
+        chatIcon.addEventListener("click", () => {
+            chatBox.style.display = "block";
+            addMessageWithIcon("fa-user", "Welcome to KCAD Solutions chat! How can we assist you today?", "support");
+        });
+
+        chatCloseBtn.addEventListener("click", () => {
+            chatBox.style.display = "none";
+        });
+
+    </script>
+
+</body>
+
+</html>
