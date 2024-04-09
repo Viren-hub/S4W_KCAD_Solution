@@ -264,6 +264,7 @@
 
 .nav-loc {
     margin: auto;
+    width: 95%;
     display: flex;
     justify-content: center;
     padding-bottom: 10px;
